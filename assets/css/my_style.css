@@ -1,0 +1,154 @@
+/* Style for phpandgit page */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.pag_homepage_slider {	
+	text-align: center;
+}
+
+.pag_page_content {
+	margin-top: 100px;
+
+}
+
+.pag_list li {
+	margin-bottom: 10px;
+}
+
+.pag_list_header {
+	font-size: 1.3em;
+}
+
+.pag_list_header div {
+	border-bottom: solid 1px #ccc;
+}
+
+.pag_list_item_title {
+	font-size: 1.3em;
+	padding: 6px 0px 6px 0px;
+	border-radius: 5px;
+}
+
+.pag_list_item_title:hover {
+	background-color:  #e6faff;
+}
+
+.pag_list_item_title_col2 {
+	text-transform: capitalize;
+}
+
+.pag_list_item_title_img {
+	width: 20px;
+	height: 20px;
+}
+
+.pag_list_item_detail {
+	margin-top: 10px;
+	padding: 40px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	display: none;
+}
+
+.pag_media_left_add_padding {
+	padding-right: 35px;
+}
+
+.pag_col {
+	text-align: center;
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 15px;
+	height: 350px;
+	position: relative;
+	margin-top: 10px;
+	
+}
+
+.pag_col_blue {
+	border-color: #269abc;
+}
+
+.pag_col_center {	
+}
+
+.pag_col_green {
+	border-color: #398439;
+}
+
+.pag_col_yellow {
+	border-color: #d58512;
+}
+
+.pag_col_bt {
+	position: absolute;
+	bottom: 20px;
+	margin: auto;
+	width: 95%;
+	
+}
+
+.pag_follow_me {
+	font-size: 4em;
+}
+
+
+/*---- Back to top button -----*/
+.back_to_top { 
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	right: 100px;
+	width: 70px;
+	height: 70px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #b3f0ff;
+	/*background-color: #ff9000;*/
+}
+
+.back_to_top:hover, .back_to_top:active {
+	color: #00ccff;
+}
+
+.back_to_top:visited {
+	color: #00ccff;
+}
+
+.back_to_top i {
+	font-size: 60px; 
+}
+
+/* Support Classes */
+.pag_show {
+  display: block !important;
+}
+.pag_hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.pag_invisible {
+  visibility: hidden;
+}
+	
+
