@@ -1,5 +1,5 @@
 <?php
-	require_once('assets\php\insertdatabase.php');
+	require_once('assets/php/insertdatabase.php');
 ?>
 
 <!DOCTYPE html>

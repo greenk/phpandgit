@@ -1,5 +1,5 @@
 <?php
-	require_once('assets\php\readdatabase.php');
+	require_once('assets/php/readdatabase.php');
 ?>
 
 

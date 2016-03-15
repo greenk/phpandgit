@@ -7,9 +7,11 @@
  *	Last modified: 03/08/2016
  */
 
+
 // Setting
 define('__ROOT__', dirname(dirname(__FILE__)));
-require_once(__ROOT__.'\php\setting.php');
+require_once(__ROOT__.'/php/setting.php');
+
 
 // Create a connection to database
 $conn = mysql_connect($connection_string, $user, $password);

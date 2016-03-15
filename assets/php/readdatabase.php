@@ -8,8 +8,8 @@
  */
 // Setting
 define('__ROOT__', dirname(dirname(__FILE__)));
-require_once(__ROOT__.'\php\setting.php');
-require_once(__ROOT__.'\php\common_func.php');
+require_once(__ROOT__.'/php/setting.php');
+require_once(__ROOT__.'/php/common_func.php');
 
 // Define log variable
 // message_flag = 1 : sucess

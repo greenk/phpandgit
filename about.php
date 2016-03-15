@@ -1,6 +1,3 @@
-<?php
-	//include_once('assets\php\insertdatabase.php');
-?>
 
 <!DOCTYPE html>
 <html lang="en">
