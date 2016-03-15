@@ -1,4 +1,4 @@
-Thank you for download PHPandGit
+Thank you for downloading PHPandGit
 
 To install this project, please follow steps below:
 
