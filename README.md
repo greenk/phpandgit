@@ -8,7 +8,7 @@ https://github.com/greenk/phpandgit/archive/master.zip
 
 2. After download the zip file, extract it.
 
-3. Go to phpandgit-master/assets/php/ folder and open the setting.php
+3. Go to phpandgit-master/assets/php/ folder and open the 'setting.php'
 
 4. Change username, password, database, connection string to your database configuration
 
