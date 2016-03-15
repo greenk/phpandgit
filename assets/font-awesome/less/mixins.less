@@ -1,20 +1,26 @@
-// Rotated & Flipped Icons
-// -------------------------
+// Mixins
+// --------------------------
 
-.@{fa-css-prefix}-rotate-90  { .fa-icon-rotate(90deg, 1);  }
-.@{fa-css-prefix}-rotate-180 { .fa-icon-rotate(180deg, 2); }
-.@{fa-css-prefix}-rotate-270 { .fa-icon-rotate(270deg, 3); }
+.fa-icon() {
+  display: inline-block;
+  font: normal normal normal @fa-font-size-base/@fa-line-height-base FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-.@{fa-css-prefix}-flip-horizontal { .fa-icon-flip(-1, 1, 0); }
-.@{fa-css-prefix}-flip-vertical   { .fa-icon-flip(1, -1, 2); }
+}
 
-// Hook for IE8-9
-// -------------------------
+.fa-icon-rotate(@degrees, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
 
-:root .@{fa-css-prefix}-rotate-90,
-:root .@{fa-css-prefix}-rotate-180,
-:root .@{fa-css-prefix}-rotate-270,
-:root .@{fa-css-prefix}-flip-horizontal,
-:root .@{fa-css-prefix}-flip-vertical {
-  filter: none;
+.fa-icon-flip(@horiz, @vert, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation, mirror=1);
+  -webkit-transform: scale(@horiz, @vert);
+      -ms-transform: scale(@horiz, @vert);
+          transform: scale(@horiz, @vert);
 }

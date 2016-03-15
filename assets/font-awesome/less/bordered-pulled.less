@@ -1,13 +1,25 @@
-// Icon Sizes
+// Bordered & Pulled
 // -------------------------
 
-/* makes the font 33% larger relative to the icon container */
-.@{fa-css-prefix}-lg {
-  font-size: (4em / 3);
-  line-height: (3em / 4);
-  vertical-align: -15%;
+.@{fa-css-prefix}-border {
+  padding: .2em .25em .15em;
+  border: solid .08em @fa-border-color;
+  border-radius: .1em;
 }
-.@{fa-css-prefix}-2x { font-size: 2em; }
-.@{fa-css-prefix}-3x { font-size: 3em; }
-.@{fa-css-prefix}-4x { font-size: 4em; }
-.@{fa-css-prefix}-5x { font-size: 5em; }
+
+.@{fa-css-prefix}-pull-left { float: left; }
+.@{fa-css-prefix}-pull-right { float: right; }
+
+.@{fa-css-prefix} {
+  &.@{fa-css-prefix}-pull-left { margin-right: .3em; }
+  &.@{fa-css-prefix}-pull-right { margin-left: .3em; }
+}
+
+/* Deprecated as of 4.4.0 */
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+.@{fa-css-prefix} {
+  &.pull-left { margin-right: .3em; }
+  &.pull-right { margin-left: .3em; }
+}
