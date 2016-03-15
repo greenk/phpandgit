@@ -2,15 +2,17 @@
 
 /*	Create a table in database
  *	Author: Binh Bui
- * 	Version: 1.0
+ * 	Version: 1.1
  *	License: #
- *	Last modified: 03/08/2016
+ *	Last modified: 03/13/2016
  */
 
 
 // Setting
 define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/php/setting.php');
+
+// Let use PDO to connect and execute query
 
 
 // Create a connection to database
