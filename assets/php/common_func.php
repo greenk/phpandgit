@@ -17,6 +17,7 @@
  function pag_decode_data ($data)
  {
 	$tempdata = urldecode($data);
+	$tempdata = htmlspecialchars($tempdata);
 	
 	return $tempdata;
  }
