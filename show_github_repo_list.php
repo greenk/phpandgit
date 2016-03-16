@@ -135,7 +135,7 @@
 		
 		<hr />
 		<!-- Paginator -->
-		<div class="row">
+		<div class="row text-center">
 			<ul class="pagination pagination-lg">
 			  <li <?php if ($pager < 20) echo 'class="active"'; ?>><a href="show_github_repo_list.php" >1</a></li>
 			  <li <?php if ($pager < 40 && $pager >20) echo 'class="active"';?>><a href="show_github_repo_list.php?page=20" >2</a></li>
