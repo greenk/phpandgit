@@ -94,7 +94,7 @@
 			</li>
 			<?php 
 			if ($message_flag==1) {
-			while ($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {?>
+			while ($row = $sth->fetch()) {?>
 			<li class="pag_list_item">
 				<div class="row pag_list_item_title">
 					<div class="col-xs-2"> <?php echo $row['git_id']; ?> </div>
@@ -120,8 +120,9 @@
 				</div>
 			</li>
 			<?php } // We release cursor memory and then close connection
-					mysql_free_result($retval);					
-					mysql_close($conn);
+					// mysql_free_result($retval);					
+					// mysql_close($conn);
+					$dbh = null;
 				} // Close of if message_flag == 1
 			?>			
 		</ul>
