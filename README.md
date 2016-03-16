@@ -1,4 +1,4 @@
-###### PHPandGit
+## PHPandGit
 
 To install this project, please follow steps below:
 
