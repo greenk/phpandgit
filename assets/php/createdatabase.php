@@ -48,7 +48,7 @@ try {
 	//set the way to receive data
 	$sth->setFetchMode(PDO::FETCH_ASSOC);	
 	
-	$sth->execute();	
+	$sth->execute();
 	
 }
 catch (PDOException $e){
