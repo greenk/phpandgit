@@ -17,7 +17,7 @@ $message_short_log = "Success";
 $message_log = "Success";
 
 // Get the Json object from GIT API
-$git_api_url = "https://api.github.com/search/repositories?q=stars%3A%3E1+language:PHP&sort=start&order=desc";
+$git_api_url = "https://api.github.com/search/repositories?q=stars%3A%3E1+language:PHP&sort=start&order=desc&per_page=100";
 $git_content_result = get_content($git_api_url);
 //convert content into an associate array for processing
 $git_content_result_decode = json_decode($git_content_result, true, 5);
