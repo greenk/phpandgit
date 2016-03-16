@@ -19,6 +19,30 @@ $message_flag = 1;
 $message_short_log = "Success";
 $message_log = "Success";
 
+try {
+	$dbh = new PDO("mysql:host=$connection_string; dbname=$database", $user, $password);	
+	
+	//set error mode for debugging
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
+	//prepare query
+	$sth = $dbh->prepare("SELECT * FROM pag_php_starred_git_repo");	
+	
+	//set the way to receive data
+	$sth->setFetchMode(PDO::FETCH_ASSOC);
+	$result = $sth->execute();		
+}
+catch (PDOException $e){
+	echo $e->getMessage();
+	$message_flag = 2;
+	$message_short_log = 'Fail';
+	//$message_log = 'Could not connect to the database. Please, check again later';
+	$message_log = 'Could not connect: ' . $e->getMessage();
+}
+
+
+
+/*//
 // Create a connection to database
 $conn = mysql_connect($connection_string, $user, $password);
 if (! $conn)
@@ -44,7 +68,7 @@ if (! $retval)
 	//die('Could not get data: ' . mysql_error());
 }
 
-/*//
+///
 while ($row = mysql_fetch_array($retval, MYSQL_ASSOC))
 {
 	$git_id = $row['git_id'];
