@@ -1,5 +1,11 @@
 <?php
+	
+	$pager = 0;
+	if (isset($_GET['page']))
+		$pager = intval($_GET['page']) + 1;	
+	
 	require_once('assets/php/readdatabase.php');
+		
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -127,7 +133,17 @@
 			?>			
 		</ul>
 		
-      
+		<hr />
+		<!-- Paginator -->
+		<div class="row">
+			<ul class="pagination pagination-lg">
+			  <li <?php if ($pager < 20) echo 'class="active"'; ?>><a href="show_github_repo_list.php" >1</a></li>
+			  <li <?php if ($pager < 40 && $pager >20) echo 'class="active"';?>><a href="show_github_repo_list.php?page=20" >2</a></li>
+			  <li <?php if ($pager < 60 && $pager >40) echo 'class="active"';?>><a href="show_github_repo_list.php?page=40" >3</a></li>
+			  <li <?php if ($pager < 80 && $pager >60) echo 'class="active"';?>><a href="show_github_repo_list.php?page=60" >4</a></li>
+			  <li <?php if ($pager < 100 && $pager >80) echo 'class="active"';?>><a href="show_github_repo_list.php?page=80" >5</a></li>
+			</ul>		
+		</div>
     </div> <!-- /container -->
 	
 	<a href="#" class="back_to_top" style="display: inline;"> 
