@@ -48,7 +48,7 @@ try {
 		$update_date = date('Y-m-d\TH:i:s\Z', strtotime($item['updated_at']));
 						
 		//prepare query
-		$sth = $dbh->prepare("SELECT * FROM pag_php_starred_git_repo WHERE git_id = :git_id");
+		$sth = $dbh->prepare("SELECT git_id FROM pag_php_starred_git_repo WHERE git_id = :git_id");
 		$sth->bindParam(':git_id', $git_id);
 		$sth->execute();
 		
