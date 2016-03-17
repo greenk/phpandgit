@@ -3,7 +3,6 @@
 - Enhance security and easy for deploying by replacing mysql_* database functions with PDO functions
 - Pulling 100 items per request from GitHub API search
 - Having pagination to help improve user interface. Now showing 20 items per page.
-- 
 
 
 ## PHPandGIT version 1.0 - 2016/03/12
