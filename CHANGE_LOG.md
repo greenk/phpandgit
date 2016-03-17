@@ -9,5 +9,5 @@
 
 - First version of PHPandGIT. Executing and querying database with basic php mysql_* functions.
 - Pulling 30 items per request from GitHub API search.
-- Having homepage to show core functions of the APP.
+- Having homepage to show core functions of the app.
 - Successfully deploy on AWS EC2 instances (Apache web-server and MySQL database server). The app is live at: http://kenhtiengviet.com/phpandgit/
