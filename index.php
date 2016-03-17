@@ -41,7 +41,7 @@
             <li class="active"><a href="index.php">Home</a></li>
             <li><a href="about.php">About</a></li>            
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PHP and GIT App <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PHP and GIT App 1.1 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li ><a href="show_github_repo_list.php">Show Repo List</a></li>
                 <li><a href="retrieve_github_repo.php">Retrieve/Update Repo List</a></li>                
@@ -60,7 +60,7 @@
 	<div class="container">	
       <!-- Using Jumbotron -->
       <div class="jumbotron pag_homepage_slider pag_page_content">
-        <h1>PHP And GitHub</h1>
+        <h1>PHP And GitHub 1.1</h1>
         <p class="lead">
 			Pulling the most starred GitHub PHP repositories  <br />			
 		</p>		
